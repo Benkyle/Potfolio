@@ -104,10 +104,14 @@
     .main1{  
         flex-direction: wrap;
         align-content: center;
-        gap: 5px;
+        gap: 20px;
         text-align: center;
-        padding: 50px;
+        padding: 60px;
+        /* height: 900px; */
         
+    }
+    .main2{
+        padding-bottom: 30px;
     }
     .main3{
         padding: 40px;
@@ -121,6 +125,15 @@
         padding-top: 40px;
     }
 
+    .one{
+        padding-bottom: 10px;
+    }
+    .two{
+        padding-bottom: 10px;
+    }
+    .three{
+        padding-bottom: 10px;
+    }
     .imgresize{
         max-width: 280px;
         height: 250px;
@@ -229,7 +242,9 @@
         /* font-family: Noto Sans Cypro Minoan; */
         font-family: Ubuntu;
     }
-
+    html{
+        scroll-behavior: smooth;
+    }
     .headerimg{
         width: 100%;
         height: 100vh;
@@ -296,12 +311,13 @@ header{
     display: flex;
     justify-content: space-between;
     padding: 15px;
+    align-items: center;
 }
 ul{
     display: flex;
     gap: 15px;
     list-style-type: none;
-    font-size: 10px;
+    font-size: 20px;
     /* text-decoration: none; */
 }
 a{
@@ -323,15 +339,15 @@ li a:hover , a:active{
 .modi{
     text-align: center;
     font-family: Abril Fatface;
-    /* font-weight: 400; */
-    font-size: 40px;
+    font-weight: 300;
+    font-size: 50px;
     
 }
 strong{
     color: rgb(223, 103, 6);
 }
 main{
-    width: 1000px;
+    width: 1200px;
     /* background-color: yellowgreen; */
     margin: auto;
     padding-top: 10px;
@@ -342,15 +358,22 @@ main{
     flex-direction: wrap;
     /* width: 1000px; */
     align-content: center;
-    gap: 5px;
-    /* padding: 10px; */
+    gap: 20px;
+    padding: 20px;
     text-align: center;
-    padding: 50px;
+    
     
 }
-/* .main2{
+.main2{
     text-align: center;
-} */
+    /* padding: 20px; */
+    width: 900px;
+}
+p{
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 25px;
+}
 .main3{
     padding: 40px;
     text-align: center;
@@ -358,22 +381,23 @@ main{
 }
 .potfolioo{
     display: grid;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(4,1fr);
     gap: 20px;
     padding-top: 40px;
 }
 .imgresize{
     width: 350px;
     height: 250px;
+    object-position: center;
 }
 .one{
-    grid-column: 2/4;
+    grid-column: 2/3;
 }
-.two{
-    grid-column: 4/5;
-}
+/* .two{
+    grid-column: /5;
+} */
 .three{
-    grid-column: 2/4;
+    grid-column: 2/3;
 }
 
 .main4{
@@ -384,7 +408,7 @@ main{
 }
 .imgresize2{
     width: 400px;
-    height: 500px;
+    height: 600px;
     object-fit: cover;
 }
 .five{
@@ -414,8 +438,9 @@ button{
 footer{
     width: 1000px;
     margin: auto;
+    margin: auto;
   
-    /* display: flex; */
+    display: flex;
 }
 /* .footer1{
     display: flex;
@@ -432,9 +457,11 @@ footer{
     font-size: 15px;
 } */
 .footer1{
-    display: flex;
+    /* display: flex; */
+    flex-direction: row;
     /* text-align: center; */
     /* width: 50%; */
+    padding: 20px;
     gap: 50px;
     justify-content: space-around;
 }
@@ -443,24 +470,29 @@ footer{
     color: black;
 }
 .nn{
-    display: flex;
-    flex-direction: column;
-   text-align: left;
-   width: 25%;
-    padding: 10px;
+    /* display: flex;
+    flex-direction: column; */
+   /* text-align: center;
+   justify-items: center; */
+   /* width: 25%; */
+    /* padding: 10px; */
 }
 .navigation{
     flex-direction: column;
-    text-align: left;
+    /* text-align: center */
+    padding: 20px;
 }
 .abtus{
-    width: 25%;
-    padding: 10px;
+    /* width: 25%;
+    padding: 10px; */
 }
 .socials{
-    width: 25%;
-    padding: 25px;
-    justify-content: space-between;
+    display: flex;
+    gap: 30px;
+    padding: 30px;
+    justify-content: center;
+    /* align-items: center; */
+    /* justify-content: space-between; */
 }
 
   } 
